@@ -2,6 +2,32 @@
  * Your code here!
  ******************************************************************************/
 
+//Function to get user initials.
+
+function getInitials(first, last) {
+  const firstName = first[0];
+  const lastName = last[0];
+  return firstName + '.' + lastName;
+}
+
+//function for counting the characters in first & last name.
+function nameCount(nameOne, nameTwo) {
+  return nameOne.length + nameTwo.length; 
+}
+
+//First & last name require a seperate getInput
+let userInput1 = getInput(0);
+let userInput2 = getInput(1);
+
+let initials = getInitials(userInput1, userInput2);
+let nameLength = nameCount(userInput1, userInput2);
+let messageOne = 'Hey, ';
+let messageTwo = ' Mind if I call you that? Your full name is ';
+let messageThree = ' letters long!'
+
+console.log(messageOne + initials + messageTwo + nameLength + messageThree)
+
+
 
 
 /*******************************************************************************
